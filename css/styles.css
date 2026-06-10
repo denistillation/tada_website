@@ -87,46 +87,59 @@ body {
   transform: translateY(-1px);
 }
 
-.hero-heading {
-  text-align: center;
-  margin-bottom: 1.75rem;
+.hero-intro {
+  max-width: 42rem;
+  margin: 0 auto 2.5rem;
+  padding: 0 0.25rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--slate);
+  text-align: left;
+  text-wrap: pretty;
+  hyphens: auto;
 }
 
-.hero-heading .hero-title {
-  margin-bottom: 1.25rem;
+@media (min-width: 640px) {
+  .hero-intro {
+    max-width: 48rem;
+    font-size: 1.1875rem;
+  }
 }
 
 .berkeley-logo-hero {
   display: block;
-  width: clamp(180px, 42vw, 240px);
+  width: clamp(200px, 50vw, 240px);
   height: auto;
-  margin: 0 auto;
-}
-
-.hero-intro {
-  max-width: 52rem;
-  margin: 0 auto 2.5rem;
-  font-size: 1.125rem;
-  line-height: 1.75;
-  color: var(--slate);
-  text-align: left;
-  text-wrap: pretty;
+  margin: 0 auto 1.5rem;
 }
 
 .hero-meta {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 20rem;
 }
 
 @media (min-width: 640px) {
-  .hero-heading {
-    margin-bottom: 2rem;
+  .hero-actions {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
+    width: auto;
+    gap: 1rem;
   }
 
-  .hero-heading .hero-title {
-    margin-bottom: 1.5rem;
+  .berkeley-logo-hero {
+    margin-bottom: 2rem;
   }
 }
 
@@ -214,18 +227,6 @@ body {
 
 .prose-section li {
   margin: 0.35rem 0;
-}
-
-.date-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: rgba(201, 162, 39, 0.15);
-  border: 1px solid rgba(201, 162, 39, 0.3);
-  border-radius: 999px;
-  font-weight: 600;
-  color: var(--berkeley-blue);
 }
 
 .site-footer {
