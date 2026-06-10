@@ -1,7 +1,7 @@
 :root {
-  --berkeley-blue: #003262;
-  --berkeley-gold: #c9a227;
-  --berkeley-gold-light: #e8c84a;
+  --berkeley-blue: #002676;
+  --berkeley-gold: #fdb515;
+  --berkeley-gold-light: #ffc31b;
   --ink: #1a1a2e;
   --slate: #4a5568;
   --cream: #faf8f5;
@@ -83,8 +83,26 @@ body {
 }
 
 .btn-primary:hover {
-  background: #002244;
+  background: #010133;
   transform: translateY(-1px);
+}
+
+.berkeley-logo {
+  display: block;
+  width: min(100%, 280px);
+  min-width: 200px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-link:hover {
+  color: white;
 }
 
 .btn-secondary {
