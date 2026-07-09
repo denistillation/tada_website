@@ -651,6 +651,21 @@ p {
   font-weight: 800;
 }
 
+.policy-note {
+  margin-top: 1.9rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--gold);
+  border-radius: 0 0.6rem 0.6rem 0;
+  background: rgba(253, 181, 21, 0.08);
+  font-size: 0.97rem;
+  line-height: 1.6;
+  color: var(--slate);
+}
+
+.policy-note strong {
+  color: var(--ink);
+}
+
 .badge {
   display: inline-block;
   margin-left: 0.4rem;
@@ -694,6 +709,18 @@ p {
 .call-card .note {
   font-size: 0.97rem;
   color: rgba(228, 235, 255, 0.85);
+  margin-bottom: 1.5rem;
+}
+
+.call-card .btn {
+  width: 100%;
+}
+
+.call-card .fine {
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(228, 235, 255, 0.72);
 }
 
 /* ---------- Venue & travel ---------- */
