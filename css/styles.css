@@ -345,7 +345,26 @@ p {
   line-height: 1.75;
   color: rgba(228, 235, 255, 0.88);
   text-wrap: pretty;
+  margin-bottom: 1.1rem;
+}
+
+.hero-affil {
+  font-size: 1rem;
+  color: rgba(228, 235, 255, 0.72);
   margin-bottom: 2.25rem;
+}
+
+.hero-affil a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(253, 181, 21, 0.55);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.hero-affil a:hover {
+  text-decoration-color: var(--gold);
 }
 
 .hero-actions {
@@ -651,8 +670,15 @@ p {
   font-weight: 800;
 }
 
+.call-prose {
+  margin-top: 1.75rem;
+  color: var(--slate);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
 .policy-note {
-  margin-top: 1.9rem;
+  margin-top: 1.75rem;
   padding: 1rem 1.25rem;
   border-left: 3px solid var(--gold);
   border-radius: 0 0.6rem 0.6rem 0;
