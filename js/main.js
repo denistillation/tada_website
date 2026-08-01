@@ -85,8 +85,8 @@
   // --- Submission deadline countdown ---
   const status = document.getElementById("deadline-status");
   if (status) {
-    // End of August 1, 2026, anywhere on Earth (UTC-12)
-    const deadline = Date.UTC(2026, 7, 2, 11, 59, 59);
+    // End of August 3, 2026, anywhere on Earth (UTC-12)
+    const deadline = Date.UTC(2026, 7, 4, 11, 59, 59);
     const msLeft = deadline - Date.now();
     const daysLeft = Math.ceil(msLeft / 86400000);
 
