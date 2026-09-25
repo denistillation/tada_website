@@ -625,6 +625,123 @@ p {
   color: var(--gold-ink);
 }
 
+/* ---------- Program ---------- */
+
+.section--dark {
+  color: #fff;
+  background:
+    radial-gradient(44rem 24rem at 0% 0%, rgba(253, 181, 21, 0.1), transparent 60%),
+    linear-gradient(160deg, var(--blue-deep), var(--blue-night) 55%, var(--blue));
+}
+
+.section--dark .eyebrow {
+  color: var(--gold);
+}
+
+.section--dark .section-head h2 {
+  color: #fff;
+}
+
+.program-grid {
+  display: grid;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (min-width: 56rem) {
+  .program-grid {
+    grid-template-columns: 1.3fr 1fr;
+  }
+}
+
+.day-card {
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.day-head {
+  margin-bottom: 1.25rem;
+}
+
+.day-label {
+  margin-bottom: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.day-head h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.day-address {
+  font-size: 0.97rem;
+  color: rgba(228, 235, 255, 0.72);
+}
+
+.day-address a {
+  margin-left: 0.35rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(253, 181, 21, 0.55);
+  text-underline-offset: 3px;
+}
+
+.day-address a:hover {
+  text-decoration-color: var(--gold);
+}
+
+.agenda {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.agenda li {
+  display: grid;
+  grid-template-columns: 5.75rem 1fr;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(228, 235, 255, 0.9);
+}
+
+.agenda .time {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: rgba(228, 235, 255, 0.65);
+  white-space: nowrap;
+}
+
+.agenda li.key .what {
+  font-weight: 700;
+  color: #fff;
+}
+
+.agenda li.key .time {
+  color: var(--gold);
+}
+
+.agenda li.keynote .what {
+  color: var(--gold);
+}
+
+.agenda li.break {
+  font-size: 0.95rem;
+  color: rgba(228, 235, 255, 0.55);
+}
+
+.agenda li.break .time {
+  color: rgba(228, 235, 255, 0.45);
+}
+
 /* ---------- Call for presentations ---------- */
 
 .call-grid {
