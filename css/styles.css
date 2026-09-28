@@ -694,7 +694,7 @@ p {
   padding: 0;
 }
 
-.agenda li {
+.agenda > li {
   display: grid;
   grid-template-columns: 6rem 1fr;
   gap: 1.25rem;
@@ -712,6 +712,122 @@ p {
 .agenda li.session .what {
   font-weight: 700;
   color: var(--ink);
+}
+
+.more summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.9rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.more summary::-webkit-details-marker {
+  display: none;
+}
+
+.more-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gold-ink);
+}
+
+.more-toggle::after {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-0.15rem) rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.more[open] .more-toggle::after {
+  transform: translateY(0.1rem) rotate(-135deg);
+}
+
+.more summary:hover .more-toggle {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.more .when-open,
+.more[open] .when-closed {
+  display: none;
+}
+
+.more[open] .when-open {
+  display: inline;
+}
+
+.more-panel {
+  margin: 0.85rem 0 0.4rem;
+  padding: 0.35rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--cream);
+}
+
+.more-note {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+  color: var(--slate);
+}
+
+.more-note strong {
+  color: var(--ink);
+}
+
+.more-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.more-list li {
+  display: grid;
+  grid-template-columns: 1.75rem 1fr;
+  gap: 0.5rem;
+  padding: 0.7rem 0;
+}
+
+.more-list li + li {
+  border-top: 1px solid var(--line);
+}
+
+.more-num {
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--gold-ink);
+}
+
+.more-title {
+  display: block;
+  font-size: 0.97rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.more-authors {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--slate);
+}
+
+@media (max-width: 40rem) {
+  .more-panel {
+    margin-left: -7.25rem;
+    padding: 0.25rem 1rem;
+  }
 }
 
 /* ---------- Call for presentations ---------- */
